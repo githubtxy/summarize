@@ -1,0 +1,8 @@
+eclipse中配置的tomcat 启动正常 但是访问报404错误
+	https://blog.csdn.net/hu1991die/article/details/44004635
+	解决方案：
+	1、如果Server里的tomcat启动了，需要先停掉。然后再移除添加的项目
+	2、之后双击server中配置的tomcat服务器，会弹出如下界面。
+	3、在Server Locations配置中选择第二个选项，use tomcat installation ，（默认的情况下eclipse是选中的第一个选项），然后再保存一下，重新启动Tomcat服务，就可以了。
+	4、需要注意的是：可能有的时候会出现Server Locations下面的几个选项都是只读的，不能进行选择。如：
+	5、这个时候就需要在Server下的Tomcat上右击——》然后选择publish，重新发布一下即可。注意：必须得确保tomcat已经停掉，然后项目已经被移除掉了。或者可以使用另一种方法进行解决：删掉Tomcat，再重新配置一个Tomcat即可
